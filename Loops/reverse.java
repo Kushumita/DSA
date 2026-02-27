@@ -1,12 +1,12 @@
 public class reverse {
     public static void main(String[] args) {
         int num = 99801;
-        int reversed = 0;
+        int rev = 0;
         while (num != 0) {
             int digit = num % 10; 
-            reversed = reversed * 10 + digit; 
+            rev = rev * 10 + digit; 
             num /= 10; 
         }
-        System.out.println("Reversed number: " + reversed);
+        System.out.println("Reversed number: " + rev);
     }
 }
