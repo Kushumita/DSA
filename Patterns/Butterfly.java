@@ -1,4 +1,4 @@
-public class Butterfly {
+\public class Butterfly {
     public static void butterfly(int n){
         //1st Half
         for(int i=1;i<=n;i++){
