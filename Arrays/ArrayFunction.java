@@ -1,3 +1,4 @@
+package Arrays;
 public class ArrayFunction {
     public static void update(int marks[],int nonchangable){
         nonchangable=10;
