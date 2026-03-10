@@ -1,7 +1,7 @@
 public class abstractClass {
     public static void main(String[] args) {
         Mustang myHorse=new Mustang();
-        //Animal -> Horse -> Mustang
+        //Animal -> Horse -> Mustang (Constructor Calling Hierarchy)
     }
 }
 
