@@ -9,9 +9,11 @@ public class LinkedList{
     }
     public static Node head;
     public static Node tail;
+    public static int size;
     public void addFirst(int data){
         //step1: create new node
         Node newNode=new Node(data);
+        size++;
         //when linked list is empty
         if(head==null){
             head=tail=newNode;
@@ -25,6 +27,7 @@ public class LinkedList{
     public void addLast(int data){
         //step1: createnew node
         Node newNode=new Node(data);
+        size++;
         //when linked list is empty
         if(head==null){
             head=tail=newNode;
@@ -42,6 +45,7 @@ public class LinkedList{
         }
         //step1: create new node
         Node newNode=new Node(data);
+        size++;
         //step2: find prev and curr
         Node temp=head;
         int i=0;
@@ -70,9 +74,10 @@ public class LinkedList{
         LinkedList ll=new LinkedList();
         ll.addFirst(2);
         ll.addFirst(1);
-        ll.addLast(3);
         ll.addLast(4);
-        ll.add(2,9);
+        ll.addLast(5);
+        ll.add(2,3);
         ll.print();
+        System.out.println("Size of linked list: "+size);
     }
 }
