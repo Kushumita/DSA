@@ -96,6 +96,19 @@ public class LinkedList{
         size--;
         return val;
     }
+    public int itrSearch(int key){
+        Node temp=head;
+        int i=0;
+        while(temp!=null){
+            if(temp.data==key){ //key found
+                return i;
+            }
+            temp=temp.next;
+            i++;
+        }
+        //key not found
+        return -1;
+    }
     public void print(){
         Node temp=head;
         if(head==null){
@@ -120,6 +133,7 @@ public class LinkedList{
         ll.print();
         ll.removeLast();
         ll.print();
-        System.out.println("Size of linked list: "+ll.size);
+        System.out.println(ll.itrSearch(3));
+        System.out.println(ll.itrSearch(10));
     }
 }
